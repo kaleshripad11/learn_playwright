@@ -6,5 +6,5 @@ def test_login_to_orange_hrm(page: Page):
     # Locate username & password field
     page.get_by_role("textbox", name = "username").fill("Admin")
     page.get_by_role("textbox", name = "password").fill("admin123")
-    page.get_by_role("button", name = "submin")
+    page.get_by_role("button", name = "submit")
     expect(page.get_by_role("heading", name = "Dashboard")).to_be_visible()
